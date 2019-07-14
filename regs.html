@@ -1,0 +1,31 @@
+ <html>
+<h1> Application Form </h1>
+<h6>enter in capital letters</h6>
+<body>
+	<form action="insertform.php" method ="post">
+	</br></br>
+	    Username 		:		<input type ="text" name="username" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter Correct email id" placeholder="Enter email id"><br/><br/>
+	    Password 		:		<input type ="text" name="password" required ><br/><br/>
+	    Favourite colour		:		<input type ="text" name="color" required pattern="[A-Z\s]+" title="enter characters only"><br/><br/>
+	   	First Name 		:		<input type ="text" name="fname" required pattern="[A-Z\s]+" title="enter characters only">
+		Sur Name 		:		<input type ="text" name="lname" required pattern="[A-Z\s]+" title="enter characters only"><br/><br/>
+		USN 			:	    <input type ="text" name="usn" required pattern="2SD[0-9]{2}[A-Z]{2}[0-9]{3}" title="use capital letters" placeholder="ex=2SD16IS010" ><br/><br/>
+		Branch 			:		<input type ="text" name="branch" required pattern="[A-Z\s]+" title="enter characters only"><br/><br/>
+		Semester		: 		<input type ="text" name="sem"><br/><br/>
+		Date of Birth 	:		<input type ="date" name="bdate" required><br/><br/>
+		Father's name 	: 		<input type ="text" name="father_name" required pattern="[A-Z\s]+" title="enter characters only"><br/><br/>
+		Mother's Name 	: 		<input type ="text" name="mother_name" required pattern="[A-Z\s]+" title="enter characters only"><br/><br/>
+		Gender 					 <input type="radio" name="gender" value="male" required > Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other</br></br>
+		Address 		: 		<input type ="text" name="address" ><br/><br/>
+		Phone No. 		: 		<input type ="text" name="phone_no" required pattern="[6-9]{1}[0-9]{9}" title="Invalid Contact Number"><br/><br/>
+		Parent Phone No.: 		<input type ="text" name="parents_no" required pattern="[6-9]{1}[0-9]{9}" title="Invalid Contact Number"><br/><br/>
+		Blood Group 	:		<input type ="text" name="blood_group"><br/><br/>
+								<input type="submit" name="submit">
+						<div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div
+	</form>
+</body>
+</html>

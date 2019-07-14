@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<h1>Feedback Form</h1>
+</head>
+<body>
+<form action="fb.php" method ="post">
+	<table>
+	<br>
+		USN 		:		<input type ="text" name="usn"required pattern="2SD[0-9]{2}[A-Z]{2}[0-9]{3}" title="use capital letters">
+	</br>
+		<tr>
+			<td>
+				Room Hygiene :
+			</td>
+			<td>
+				<input type="radio" name="room_hygiene" value="10" required>Good
+				<input type="radio" name="room_hygiene" value="5" required>Average
+				<input type="radio" name="room_hygiene" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Furniture Availability :
+			</td>
+			<td>
+				<input type="radio" name="furniture" value="10" required>Good
+				<input type="radio" name="furniture" value="5" required>Average
+				<input type="radio" name="furniture" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Corridor Arrangements(Ex:Lighting,Cleaning...) :
+			</td>
+			<td>
+				<input type="radio" name="corridor" value="10" required>Good
+				<input type="radio" name="corridor" value="5" required>Average
+				<input type="radio" name="corridor" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Bathrooms :
+			</td>
+			<td>
+				<input type="radio" name="bathroom" value="10"required>Good
+				<input type="radio" name="bathroom" value="5" required>Average
+				<input type="radio" name="bathroom" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Recreational Facilities(TV,Sports...) :
+			</td>
+			<td>
+				<input type="radio" name="recreation" value="10" required>Good
+				<input type="radio" name="recreation" value="5" required>Average
+				<input type="radio" name="recreation" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Hostel Surroundings :
+			</td>
+			<td>
+				<input type="radio" name="hostel_surrounding" value="10" required>Good
+				<input type="radio" name="hostel_surrounding" value="5" required>Average
+				<input type="radio" name="hostel_surrounding" value="2" required>Bad
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Internet Facilities :
+			</td>
+			<td>
+				<input type="radio" name="internet" value="10" required>Good
+				<input type="radio" name="internet" value="5" required>Average
+				<input type="radio" name="internet" value="2" required>Bad
+			</td>
+		</tr>
+	</table>
+	<br>
+							<input type="submit" name="submit">
+    </br>
+</form>
+</body>
+</html>

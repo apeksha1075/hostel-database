@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h1>                     CHANGE PASSWORD                          </h1> 
+	<form action="pass_change.php" method ="post">
+	<br></br>
+	<br>
+		USN 		:		<input type ="text" name="usn" required required pattern="2SD[0-9]{2}[A-Z]{2}[0-9]{3}" title="use capital letters">
+	</br></br>
+	<br>
+		User Name 		:		<input type ="text" name="namer" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter Correct email id" >
+	</br></br>
+	Favourite Color		:		<input type ="text" name="color" required pattern="[A-Z\s]+" title="enter capital letters only">
+	</br></br>
+	New Password 		:		<input type ="text" name="password" required>
+	</br></br>
+	<br/><br/>
+						<input type="submit" name="submit">
+						
+	</form>
+</div>
+</body>
+</html>

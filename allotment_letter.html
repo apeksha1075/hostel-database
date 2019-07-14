@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h1>                     ALLOTMENT LETTER                         </h1> 
+	<form action="allotment_download.php" method ="post">
+	<br></br>
+	<br>
+		USN 		:		<input type ="text" name="usn" required pattern="2SD[0-9]{2}[A-Z]{2}[0-9]{3}" title="use capital letters" >
+	</br>
+	<br>
+		<input type="submit" name="submit">
+	</form>
+</div>
+</body>
+</html>
